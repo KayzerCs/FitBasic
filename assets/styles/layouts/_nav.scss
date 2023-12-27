@@ -1,0 +1,40 @@
+nav {
+    height: 10vh;
+    color: $white;
+    background: $black;
+    display: grid;
+    grid-template-columns: 55% 45%;
+
+    .title-nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        h1 {
+            font-family: $font1;
+            font-size: 70px;
+            color: $grey;
+        }
+    }
+
+    .user-nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0% 10%;
+
+        .content-user {
+            width: 30%;
+            min-width: 180px;
+            display: flex;
+            justify-content: space-evenly;
+            cursor: pointer;
+            transition: .3s ease;
+
+            &:hover {
+                transform: translateX(2px);
+            }
+        }
+    }
+
+}

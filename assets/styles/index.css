@@ -8,10 +8,51 @@
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(../font/MontserratAlternates-Black.ttf);
+  src: url(../font/MontserratAlternates-Light.ttf);
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, serif;
+  background: rgb(182, 182, 182);
+  font-weight: 900;
+}
+
+nav {
+  height: 10vh;
+  color: #eee;
+  background: #21201e;
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+nav .title-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav .title-nav h1 {
+  font-family: Allura, cursive;
+  font-size: 70px;
+  color: rgb(182, 182, 182);
+}
+nav .user-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0% 10%;
+}
+nav .user-nav .content-user {
+  width: 30%;
+  min-width: 180px;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+nav .user-nav .content-user:hover {
+  transform: translateX(2px);
 }/*# sourceMappingURL=index.css.map */

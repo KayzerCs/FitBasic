@@ -8,7 +8,7 @@
 }
 @font-face {
     font-family: "Montserrat";
-    src: url(../font/MontserratAlternates-Black.ttf);
+    src: url(../font/MontserratAlternates-Light.ttf);
 }
 
 $font1: Allura, cursive;
@@ -30,3 +30,8 @@ $grey: rgb(182, 182 ,182);
     box-sizing: border-box;
 }
 
+body {
+    font-family: $font3;
+    background: $grey;
+    font-weight: 900;
+}
