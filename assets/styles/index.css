@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Allura";
+  src: url(../font/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../font/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../font/MontserratAlternates-Black.ttf);
+}
 * {
   margin: 0;
   padding: 0;

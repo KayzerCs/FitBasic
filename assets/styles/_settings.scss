@@ -1,5 +1,32 @@
+@font-face {
+    font-family: "Allura";
+    src: url(../font/Allura-Regular.ttf);
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(../font/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(../font/MontserratAlternates-Black.ttf);
+}
+
+$font1: Allura, cursive;
+$font2: Poppins, serif;
+$font3: Montserrat, serif;
+$white: #eee;
+$black: #21201e;
+$grey: rgb(182, 182 ,182);
+
+@mixin childCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
