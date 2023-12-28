@@ -22,7 +22,7 @@ li {
 
 body {
   font-family: Montserrat, serif;
-  background: rgb(182, 182, 182);
+  background: rgba(207, 205, 205, 0.712);
   font-weight: 900;
 }
 
@@ -157,4 +157,16 @@ header .p-header .container-p-header button {
 header .p-header .container-p-header button:hover {
   background: #eee;
   transform: scale(1.1);
+}
+
+.section1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.section1 #imgInshape {
+  width: 60%;
+  padding: 2rem;
+  opacity: 1;
+  transform: translateX(200px);
+  transition: 1s ease-in;
 }/*# sourceMappingURL=index.css.map */
