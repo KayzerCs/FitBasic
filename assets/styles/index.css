@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+li {
+  list-style: none;
+}
+
 body {
   font-family: Montserrat, serif;
   background: rgb(182, 182, 182);
@@ -37,7 +41,7 @@ nav .title-nav {
 nav .title-nav h1 {
   font-family: Allura, cursive;
   font-size: 70px;
-  color: rgb(182, 182, 182);
+  color: #eee;
 }
 nav .user-nav {
   display: flex;
@@ -52,7 +56,105 @@ nav .user-nav .content-user {
   justify-content: space-evenly;
   cursor: pointer;
   transition: 0.3s ease;
+  color: #eee;
 }
 nav .user-nav .content-user:hover {
-  transform: translateX(2px);
+  transform: scale(1.1);
+}
+
+header {
+  background: url(/assets/img/img-bg3.jpg) center/cover;
+  height: 60vh;
+}
+header #side-bar {
+  position: absolute;
+  width: 200px;
+  height: 70%;
+  background: rgba(39, 39, 39, 0.911);
+  top: 0;
+  left: -230px;
+  transition: 0.5s ease-out;
+  z-index: 4;
+}
+header .toggle-btn {
+  position: absolute;
+  top: 20px;
+  left: 260px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+header .bar {
+  display: block;
+  height: 5px;
+  width: 30px;
+  left: 3%;
+  margin: 6px 0;
+  transition: 0.3s;
+}
+header .toggle-btn span {
+  width: 50px;
+  height: 8px;
+  border-radius: 5px;
+  background: #eee;
+  display: block;
+  margin-top: 4px;
+  transition: 0.3s ease;
+}
+header li {
+  color: #eee;
+  list-style: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding-left: 5px;
+  padding-top: 25px;
+}
+header li:hover {
+  background: rgba(107, 106, 106, 0.534);
+}
+header .p-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-radius: 200px;
+}
+header .p-header .container-p-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgba(5, 5, 5, 0.61);
+  border-radius: 40px;
+  height: 25%;
+  width: 50%;
+  min-width: 670px;
+  max-width: 680px;
+}
+header .p-header .container-p-header p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins, serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #eee;
+}
+header .p-header .container-p-header button {
+  font-family: Poppins, serif;
+  font-size: 1rem;
+  background: rgb(182, 182, 182);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 30%;
+  cursor: pointer;
+  border-radius: 45px;
+  border: none;
+  transition: 0.3s ease;
+}
+header .p-header .container-p-header button:hover {
+  background: #eee;
+  transform: scale(1.1);
 }/*# sourceMappingURL=index.css.map */

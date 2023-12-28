@@ -13,7 +13,7 @@ nav {
         h1 {
             font-family: $font1;
             font-size: 70px;
-            color: $grey;
+            color: $white;
         }
     }
 
@@ -30,9 +30,10 @@ nav {
             justify-content: space-evenly;
             cursor: pointer;
             transition: .3s ease;
+            color: $white;
 
             &:hover {
-                transform: translateX(2px);
+                transform: scale(1.1);
             }
         }
     }

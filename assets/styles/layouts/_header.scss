@@ -1,0 +1,101 @@
+header {
+    background: url(/assets/img/img-bg3.jpg) center/cover;
+    height: 60vh;
+
+    #side-bar {
+        position: absolute;
+        width: 200px;
+        height: 70%;
+        background: rgba(39, 39, 39, 0.911);
+        top: 0;
+        left: -230px;
+        transition: 0.5s ease-out;
+        z-index: 4;
+    }
+
+    .toggle-btn {
+        position: absolute;
+        top: 20px;
+        left: 260px;
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+    }
+
+    .bar {
+        display: block;
+        height: 5px;
+        width: 30px;
+        left: 3%;
+        margin: 6px 0;
+        transition: 0.3s;
+    }
+
+    .toggle-btn span {
+        width: 50px;
+        height: 8px;
+        border-radius: 5px;
+        background: $white;
+        display: block;
+        margin-top: 4px;
+        transition: 0.3s ease;
+    }
+
+    li {
+        color: $white;
+        list-style: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding-left: 5px;
+        padding-top: 25px;
+
+        &:hover {
+            background: rgba(107, 106, 106, 0.534);
+        }
+    }  
+
+    .p-header {
+        @include childCenter;
+        height: 100%;
+        border-radius: 200px;
+
+        .container-p-header {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background: rgba(5, 5, 5, 0.61);
+            border-radius: 40px;
+            height: 25%;
+            width: 50%;
+            min-width: 670px;
+            max-width: 680px;
+ 
+            p {
+                @include childCenter;
+                font-family: $font2;
+                font-size: 2rem;
+                font-weight: 900;
+                color: $white;
+            }
+
+            button {
+                font-family: $font2;
+                font-size: 1rem;
+                background: $grey;
+                @include childCenter;
+                height: 45px;
+                width: 30%;
+                cursor: pointer;
+                border-radius: 45px;
+                border: none;
+                transition: .3s ease;
+
+                &:hover {
+                    background: $white;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

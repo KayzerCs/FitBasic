@@ -30,6 +30,10 @@ $grey: rgb(182, 182 ,182);
     box-sizing: border-box;
 }
 
+li {
+    list-style: none;
+}
+
 body {
     font-family: $font3;
     background: $grey;
