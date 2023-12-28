@@ -5,11 +5,11 @@
     height: 250px;
     width: 520px;
     text-align: center;
-    background: $grey;
+    background: rgba(92, 90, 90, 0.74);
     border-radius: 76% 24% 90% 10% / 20% 85% 15% 80%;
     box-shadow: 0 5px 10px black;
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(500px);
     transition: 1s ease-out;
 
     .pop-up-container {

@@ -213,11 +213,11 @@ header .p-header .container-p-header button:hover {
   height: 250px;
   width: 520px;
   text-align: center;
-  background: rgb(182, 182, 182);
+  background: rgba(92, 90, 90, 0.74);
   border-radius: 76% 24% 90% 10%/20% 85% 15% 80%;
   box-shadow: 0 5px 10px black;
   opacity: 1;
-  transform: translateX(0px);
+  transform: translateX(500px);
   transition: 1s ease-out;
 }
 .pop-up .pop-up-container {
@@ -282,5 +282,45 @@ header .p-header .container-p-header button:hover {
 }
 
 footer {
-  height: 23vh;
+  height: 20vh;
+  background: #21201e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70%;
+  max-height: 127px;
+  min-height: 127px;
+  width: 60%;
+  min-width: 600px;
+  max-width: 990px;
+}
+footer .container-footer .container-sociaux {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eee;
+  height: 80px;
+  width: 80px;
+  border-radius: 200px;
+  cursor: pointer;
+}
+footer .container-footer .container-sociaux:hover {
+  transform: scale(1.3);
+}
+footer .container-footer .container-sociaux i {
+  font-size: 3.5rem;
+}
+footer .container-footer #sociaux1 i {
+  color: blue;
+}
+footer .container-footer #sociaux2 i {
+  color: rgb(180, 13, 13);
+}
+footer .container-footer #sociaux3 i {
+  color: rgb(182, 18, 97);
 }/*# sourceMappingURL=index.css.map */
