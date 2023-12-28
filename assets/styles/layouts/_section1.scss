@@ -2,12 +2,22 @@
     display: grid;
     grid-template-columns: 40% 60%;
 
+    @media screen and (max-width: 1030px) {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 50% 50%;
+    }
+
     #imgInshape {
         width: 60%;
+        min-width: 396px;
+        max-width: 396px;
         height: 90%;
+        min-height: 510px;
+        max-height: 510px;
         padding: 2rem;
         opacity: 1;
-        transform: translateX(140px);
+        transform: translateX(35%);
         transition: 1s ease-in;
     }
 
@@ -18,12 +28,23 @@
         align-items: center;
         margin: 90px;
         height: 60%;
+        min-height: 345px;
+        max-height: 345px;
         width: 80%;
+        max-width: 780px;
+        max-width: 780px;
 
         h2 {
             font-size: 3.5rem;
             font-weight: 900;
             font-family: $font1;
+        }
+
+        p {
+
+            @media screen and (max-width: 1365px) {
+                font-size: 13px;
+            }
         }
     }
 }

@@ -1,0 +1,84 @@
+.pop-up {
+    position: fixed;
+    right: 1rem;
+    bottom: 2rem;
+    height: 250px;
+    width: 520px;
+    text-align: center;
+    background: $grey;
+    border-radius: 76% 24% 90% 10% / 20% 85% 15% 80%;
+    box-shadow: 0 5px 10px black;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: 1s ease-out;
+
+    .pop-up-container {
+        width: 100%;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -45%);
+
+        h3 {
+            color: white;
+            font-family: $font2;
+            margin: 1rem;
+            font-size: 1.5rem;
+        }
+
+        input {
+            border: 1px solid #333;
+            padding: 1rem 2rem;
+            border-radius: 15px;
+            box-shadow: 1px 2px 0 black;
+            outline: none;
+            font-size: 1.2rem;
+            transition: 0.5s;
+
+            &:focus {
+                background: rgb(211, 242, 251);
+            }
+        }
+
+        button {
+            border-radius: 15px;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            border: 1px solid #333;
+            outline: none;
+            cursor: pointer;
+            background: white;
+            box-shadow: 1px 2px 0 black;
+            transition: 0.3s;
+
+            &:hover {
+                background: $grey;
+                transform: translateX(-1px);
+            }
+
+            &:active {
+                transform: scale(0.96);
+            }
+        }
+
+        .fa-times-circle {
+            position: absolute;
+            left: 1rem;
+            top: 1px;
+            font-size: 1.7rem;
+            color: $black;
+            text-shadow: 2px 2px 0px #33333362;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                transform: translateX(-1px);
+                color: whitesmoke;
+            }
+
+            &:active {
+                transform: scale(1.5);
+            }
+        }
+    }
+}
