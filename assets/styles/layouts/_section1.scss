@@ -1,12 +1,29 @@
 .section1 {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
 
     #imgInshape {
         width: 60%;
+        height: 90%;
         padding: 2rem;
         opacity: 1;
-        transform: translateX(200px);
+        transform: translateX(140px);
         transition: 1s ease-in;
+    }
+
+    .container-section1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 90px;
+        height: 60%;
+        width: 80%;
+
+        h2 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            font-family: $font1;
+        }
     }
 }
