@@ -1,9 +1,12 @@
 nav {
-    height: 10vh;
+    height: 90px;
+    width: 100%;
     color: $white;
     background: $black;
     display: grid;
     grid-template-columns: 55% 45%;
+    transition: .5s ease;
+
 
     .title-nav {
         display: flex;

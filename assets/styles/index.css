@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 li {
   list-style: none;
 }
@@ -27,11 +31,13 @@ body {
 }
 
 nav {
-  height: 10vh;
+  height: 90px;
+  width: 100%;
   color: #eee;
   background: #21201e;
   display: grid;
   grid-template-columns: 55% 45%;
+  transition: 0.5s ease;
 }
 nav .title-nav {
   display: flex;
@@ -69,12 +75,15 @@ header {
 header #side-bar {
   position: absolute;
   width: 200px;
-  height: 70%;
+  height: 40%;
   background: rgba(39, 39, 39, 0.911);
   top: 0;
   left: -230px;
   transition: 0.5s ease-out;
   z-index: 4;
+}
+header #side-bar.active {
+  left: 0;
 }
 header .toggle-btn {
   position: absolute;
@@ -84,14 +93,6 @@ header .toggle-btn {
   height: 50px;
   width: 50px;
 }
-header .bar {
-  display: block;
-  height: 5px;
-  width: 30px;
-  left: 3%;
-  margin: 6px 0;
-  transition: 0.3s;
-}
 header .toggle-btn span {
   width: 50px;
   height: 8px;
@@ -100,6 +101,17 @@ header .toggle-btn span {
   display: block;
   margin-top: 4px;
   transition: 0.3s ease;
+}
+header .toggle-btn span .active {
+  position: absolute;
+}
+header .bar {
+  display: block;
+  height: 5px;
+  width: 30px;
+  left: 3%;
+  margin: 6px 0;
+  transition: 0.3s;
 }
 header li {
   color: #eee;
@@ -178,8 +190,8 @@ header .p-header .container-p-header button:hover {
   min-height: 510px;
   max-height: 510px;
   padding: 2rem;
-  opacity: 1;
-  transform: translateX(35%);
+  opacity: 0;
+  transform: translateX(-500px);
   transition: 1s ease-in;
 }
 .section1 .container-section1 {
@@ -216,8 +228,8 @@ header .p-header .container-p-header button:hover {
   background: rgba(92, 90, 90, 0.74);
   border-radius: 76% 24% 90% 10%/20% 85% 15% 80%;
   box-shadow: 0 5px 10px black;
-  opacity: 1;
-  transform: translateX(500px);
+  opacity: 0;
+  transform: translateX(600px);
   transition: 1s ease-out;
 }
 .pop-up .pop-up-container {
